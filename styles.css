@@ -1,84 +1,97 @@
-/* General Styles */
-body {
+/* General Reset */
+* {
     margin: 0;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-}
-
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-/* Header */
-.header {
-    background-color: #2A76EE;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-.header h1 {
-    margin: 0;
-    font-size: 2rem;
-}
-
-.header p {
-    font-size: 1rem;
-}
-
-/* Main */
-.main {
-    padding: 20px 0;
-}
-
-h2 {
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-}
-
-.consulta-form .form-group {
-    margin-bottom: 15px;
-}
-
-.consulta-form label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-.consulta-form input,
-.consulta-form textarea {
-    width: 100%;
-    padding: 10px;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    padding: 0;
     box-sizing: border-box;
 }
 
-.consulta-form .btn {
-    background-color: #2A76EE;
+/* Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Section */
+.header {
+    background: linear-gradient(135deg, #2A76EE, #1C54B2);
     color: #fff;
-    border: none;
-    padding: 10px 15px;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.consulta-form .btn:hover {
-    background-color: #185ABC;
-}
-
-/* Footer */
-.footer {
-    background-color: #f4f4f4;
     text-align: center;
-    padding: 10px 0;
+    padding: 60px 20px;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.header .btn-primary {
+    background-color: #F0A500;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.header .btn-primary:hover {
+    background-color: #D48806;
+}
+
+/* About Section */
+.about {
+    background: #f9f9f9;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #2A76EE;
+}
+
+.about p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Features Section */
+.features {
+    background: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #2A76EE;
+}
+
+.features ul {
+    list-style: none;
+    padding: 0;
+}
+
+.features ul li {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    color: #555;
+}
+
+/* Footer Section */
+.footer {
+    background: #2A76EE;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
     margin-top: 20px;
-    font-size: 0.9rem;
-    color: #777;
 }

@@ -1,46 +1,65 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atención al Cliente | SenGo</title>
+    <title>Agentforce Chat Integration</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header class="header">
         <div class="container">
-            <h1>SenGo Atención al Cliente</h1>
-            <p>Estamos aquí para ayudarte. Envía tus consultas y recibirás respuesta en el menor tiempo posible.</p>
+            <h1>Agentforce Chat Integration</h1>
+            <p>Your direct connection to professional support, powered by Salesforce Agentforce.</p>
+            <a href="#start-chat" class="btn-primary">Start Chat</a>
         </div>
     </header>
 
     <main class="main">
-        <div class="container">
-            <h2>Formulario de Consulta</h2>
-            <form id="consultaForm" class="consulta-form">
-                <div class="form-group">
-                    <label for="nombre">Nombre completo</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Correo electrónico</label>
-                    <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
-                </div>
-                <div class="form-group">
-                    <label for="consulta">Consulta</label>
-                    <textarea id="consulta" name="consulta" rows="5" placeholder="Describe tu consulta" required></textarea>
-                </div>
-                <button type="submit" class="btn">Enviar</button>
-            </form>
-        </div>
+        <section class="about">
+            <div class="container">
+                <h2>Why Choose Our Chat?</h2>
+                <p>Experience fast, reliable, and professional support directly through our integrated chat solution. Get your questions answered and problems solved in real time.</p>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h2>Key Features</h2>
+                <ul>
+                    <li>Real-time communication with support agents.</li>
+                    <li>Powered by Salesforce Agentforce technology.</li>
+                    <li>Persistent and secure conversations.</li>
+                </ul>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
         <div class="container">
-            <p>© 2024 SenGo. Todos los derechos reservados.</p>
+            <p>© 2024 Your Company. All rights reserved.</p>
         </div>
     </footer>
 
-    <script src="scripts.js"></script>
+    <!-- Agentforce Embedded Messaging Script -->
+    <script type="text/javascript">
+        function initEmbeddedMessaging() {
+            try {
+                embeddedservice_bootstrap.settings.language = 'en_US'; // Adjust language if needed
+                
+                embeddedservice_bootstrap.init(
+                    '00DHr00000DeqdD', // Replace with your Org ID
+                    'Agentforce', // Deployment Name
+                    'https://ax1732212273812.my.site.com/ESWAgentforce1732907072935', // Your Deployment URL
+                    {
+                        scrt2URL: 'https://ax1732212273812.my.salesforce-scrt.com' // Secure URL for Salesforce
+                    }
+                );
+            } catch (err) {
+                console.error('Error loading Embedded Messaging: ', err);
+            }
+        };
+    </script>
+    <script type="text/javascript" src="https://ax1732212273812.my.site.com/ESWAgentforce1732907072935/assets/js/bootstrap.min.js" onload="initEmbeddedMessaging()"></script>
 </body>
 </html>
