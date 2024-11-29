@@ -1,0 +1,84 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.header {
+    background-color: #2A76EE;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.header p {
+    font-size: 1rem;
+}
+
+/* Main */
+.main {
+    padding: 20px 0;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.consulta-form .form-group {
+    margin-bottom: 15px;
+}
+
+.consulta-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.consulta-form input,
+.consulta-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.consulta-form .btn {
+    background-color: #2A76EE;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.consulta-form .btn:hover {
+    background-color: #185ABC;
+}
+
+/* Footer */
+.footer {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #777;
+}

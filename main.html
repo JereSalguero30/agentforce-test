@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atención al Cliente | SenGo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>SenGo Atención al Cliente</h1>
+            <p>Estamos aquí para ayudarte. Envía tus consultas y recibirás respuesta en el menor tiempo posible.</p>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <h2>Formulario de Consulta</h2>
+            <form id="consultaForm" class="consulta-form">
+                <div class="form-group">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+                </div>
+                <div class="form-group">
+                    <label for="consulta">Consulta</label>
+                    <textarea id="consulta" name="consulta" rows="5" placeholder="Describe tu consulta" required></textarea>
+                </div>
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 SenGo. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
