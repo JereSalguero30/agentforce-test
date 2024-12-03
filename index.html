@@ -6,6 +6,30 @@
     <title>SenGo - Customer Support</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* Estilo para el botón flotante */
+        .chat-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+        }
+
+        .chat-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
     <header class="header">
@@ -13,7 +37,6 @@
             <img src="https://sengo.io/static/media/sengo-logo.76e67ad5.svg" alt="SenGo Logo" class="logo">
             <h1>SenGo Customer Support</h1>
             <p>Fast and reliable support for all your needs. Start a chat with our team today!</p>
-            <button class="btn-primary" onclick="initEmbeddedMessaging()">Start Chat</button>
         </div>
     </header>
 
@@ -42,6 +65,9 @@
             <p>© 2024 SenGo. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- Botón flotante para el chat -->
+    <button class="chat-button" onclick="initEmbeddedMessaging()">💬</button>
 
     <!-- Salesforce Embedded Messaging Script -->
     <script type='text/javascript'>
